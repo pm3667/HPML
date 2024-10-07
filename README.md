@@ -1,10 +1,10 @@
-# SLURM Batch Script for Running Python on GPU
+# SLURM Batch Script for Running C2 to C6 on GPU and C7 on CPU
 
-# If per-batch training loss is required to be printed, mention --print-per-batch-loss
-# For different number of workers we can change the number of workers in the last line, for e.g., for 0 workers: --num-workers 0
-# to run on CPU, remove --CUDA. This is because by default, if code does not specify a device for computation (e.g., GPU or CPU), it will run on the CPU. 
-# For different optimizers we can change the optimizer name in the last line, for e.g., for SGD with Nesterov we can write: --optimizer sgd_nesterov
-# for question C7, we need to change the input file name to python c7.py (in the last line)
+## If per-batch training loss is required to be printed, mention --print-per-batch-loss
+## For different number of workers we can change the number of workers in the last line, for e.g., for 0 workers: --num-workers 0
+## to run on CPU, remove --CUDA. This is because by default, if code does not specify a device for computation (e.g., GPU or CPU), it will run on the CPU. 
+## For different optimizers we can change the optimizer name in the last line, for e.g., for SGD with Nesterov we can write: --optimizer sgd_nesterov
+## for question C7, we need to change the input file name to python c7.py (in the last line)
 ## SLURM Batch Script
 
 ```bash
